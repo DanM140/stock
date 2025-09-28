@@ -25,7 +25,7 @@ class ListStocks extends ListRecords
                         ->label('CSV File')
                         ->acceptedFileTypes(['text/csv', 'text/plain'])
                         ->required()
-                        ->storeFiles(false), // don’t save in storage, handle manually
+                        ->storeFiles(false), 
                 ])
               ->action(function (array $data): void {
     $file = $data['file'];
